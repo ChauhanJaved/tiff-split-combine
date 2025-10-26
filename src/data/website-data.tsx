@@ -14,7 +14,7 @@ export const headerNavItems: string[] = [
   HeaderNavItems.Home,
   HeaderNavItems.Contact,
 ];
-export const websiteURL: string = "https://www.tiff-split-combine.com/";
+export const websiteURL: string = "https://www.tiff-split-combine.com";
 export const indexMetadata: Metadata = {
   title: "TIFF Combiner, Splitter & Split-Merge Tool (Online & Desktop App)",
   description:
