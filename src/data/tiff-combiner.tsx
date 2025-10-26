@@ -116,7 +116,7 @@ export const TIFFCombiner: portfolioItem = {
       title: `Free ${productTitles.TIFFCombiner} for Windows | Fast & Reliable TIFF Combining Tool`,
       description:
         "Effortlessly combine multi-page TIFF files with our fast and free Windows software. Enjoy a user-friendly interface, batch processing, and customizable combining options for precise control.",
-      url: `https://www.frameworkteam.com/${ProductIDs.TIFFCombiner}.html`,
+      url: `https://www.frameworkteam.com/${ProductIDs.TIFFCombiner}`,
       siteName: `${productTitles.TIFFCombiner} for Windows`,
       images: [
         {
@@ -133,4 +133,42 @@ export const TIFFCombiner: portfolioItem = {
       type: "article",
     },
   },
+  licenseOptions: [
+    {
+      licenseType: "ONE Computer License",
+      price: "$24.95 USD",
+      paymentLink:
+        "https://frameworkteam.onfastspring.com/tiff-combiner-one-computer-license",
+    },
+    {
+      licenseType: "TWO Computers License",
+      price: "$39.95 USD",
+      paymentLink:
+        "https://frameworkteam.onfastspring.com/tiff-combiner-two-computers-license",
+    },
+    {
+      licenseType: "THREE Computers License",
+      price: "$44.95 USD",
+      paymentLink:
+        "https://frameworkteam.onfastspring.com/tiff-combiner-three-computers-license",
+    },
+    {
+      licenseType: "FIVE Computers License",
+      price: "$64.95 USD",
+      paymentLink:
+        "https://frameworkteam.onfastspring.com/tiff-combiner-five-computers-license",
+    },
+    {
+      licenseType: "TEN Computers License",
+      price: "$109.95 USD",
+      paymentLink:
+        "https://frameworkteam.onfastspring.com/tiff-combiner-ten-computers-license",
+    },
+    {
+      licenseType: "UNLIMITED Computers License",
+      price: "$224.95 USD",
+      paymentLink:
+        "https://frameworkteam.onfastspring.com/tiff-combiner-unlimited-computers-license",
+    },
+  ],
 };

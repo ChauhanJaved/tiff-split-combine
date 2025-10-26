@@ -36,7 +36,7 @@ export default function Footer(props: PropsFooter) {
             aria-label="Go to company website for terms of use"
           >
             <Link
-              href="https://www.frameworkteam.com/terms-of-use.html"
+              href="https://www.frameworkteam.com/terms-of-use"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -51,7 +51,7 @@ export default function Footer(props: PropsFooter) {
             asChild
           >
             <Link
-              href="https://www.frameworkteam.com/privacy-policy.html"
+              href="https://www.frameworkteam.com/privacy-policy"
               target="_blank"
               rel="noopener noreferrer"
             >

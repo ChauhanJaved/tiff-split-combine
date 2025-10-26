@@ -121,9 +121,9 @@ export type ProductSubTitles =
   (typeof productSubTitles)[keyof typeof productSubTitles];
 
 export const productWebsites = {
-  TIFFSplitter: "https://www.tiff-split-combine.com/tiff-splitter.html",
-  TIFFCombiner: "https://www.tiff-split-combine.com/tiff-combiner.html",
-  TIFFSplitMerge: "https://www.tiff-split-combine.com/tiff-split-merge.html",
+  TIFFSplitter: "https://www.tiff-split-combine.com/tiff-splitter",
+  TIFFCombiner: "https://www.tiff-split-combine.com/tiff-combiner",
+  TIFFSplitMerge: "https://www.tiff-split-combine.com/tiff-split-merge",
 } as const;
 export type ProductWebsite =
   (typeof productWebsites)[keyof typeof productWebsites];
@@ -138,6 +138,13 @@ export const productDownloadLinks = {
 } as const;
 export type ProductDownloadLinks =
   (typeof productDownloadLinks)[keyof typeof productDownloadLinks];
+
+export interface LicenseOption {
+  licenseType: string;
+  price: string;
+  paymentLink: string;
+}
+
 export interface portfolioItem {
   id: ProductIDs;
   title: ProductTitles;
@@ -152,4 +159,5 @@ export interface portfolioItem {
   features: string[];
   description?: ReactNode;
   metaData: Metadata;
+  licenseOptions: LicenseOption[];
 }

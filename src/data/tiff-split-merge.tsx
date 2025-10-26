@@ -128,7 +128,7 @@ export const TIFFSplitMerge: portfolioItem = {
       title: `Free ${productTitles.TIFFSplitMerge} for Windows | Fast & Reliable TIFF Splitting & Merging Tool`,
       description:
         "Effortlessly split and merge multi-page TIFF files with our fast and free Windows software. Enjoy a user-friendly interface, batch processing, and customizable options for precise file management.",
-      url: `https://www.frameworkteam.com/${ProductIDs.TIFFSplitMerge}.html`,
+      url: `https://www.frameworkteam.com/${ProductIDs.TIFFSplitMerge}`,
       siteName: `${productTitles.TIFFSplitMerge} for Windows`,
       images: [
         {
@@ -145,4 +145,42 @@ export const TIFFSplitMerge: portfolioItem = {
       type: "article",
     },
   },
+  licenseOptions: [
+    {
+      licenseType: "ONE Computer License",
+      price: "$24.95 USD",
+      paymentLink:
+        "https://frameworkteam.onfastspring.com/tiff-split-merge-one-computer-license",
+    },
+    {
+      licenseType: "TWO Computers License",
+      price: "$39.95 USD",
+      paymentLink:
+        "https://frameworkteam.onfastspring.com/tiff-split-merge-two-computers-license",
+    },
+    {
+      licenseType: "THREE Computers License",
+      price: "$44.95 USD",
+      paymentLink:
+        "https://frameworkteam.onfastspring.com/tiff-split-merge-three-computers-license",
+    },
+    {
+      licenseType: "FIVE Computers License",
+      price: "$64.95 USD",
+      paymentLink:
+        "https://frameworkteam.onfastspring.com/tiff-split-merge-five-computers-license",
+    },
+    {
+      licenseType: "TEN Computers License",
+      price: "$109.95 USD",
+      paymentLink:
+        "https://frameworkteam.onfastspring.com/tiff-split-merge-ten-computers-license",
+    },
+    {
+      licenseType: "UNLIMITED Computers License",
+      price: "$224.95 USD",
+      paymentLink:
+        "https://frameworkteam.onfastspring.com/tiff-split-merge-unlimited-computers-license",
+    },
+  ],
 };
