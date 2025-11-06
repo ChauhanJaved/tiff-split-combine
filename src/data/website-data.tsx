@@ -33,13 +33,13 @@ export const indexMetadata: Metadata = {
     "free tiff utility",
   ],
   alternates: {
-    canonical: `${websiteURL}`,
+    canonical: `${websiteURL}/`,
   },
   openGraph: {
     title: "TIFF Combiner, Splitter & Split-Merge Tool (Online & Desktop App)",
     description:
       "Combine, split, or split & merge TIFF files instantly. Use our online TIFF tools or desktop apps for complete privacy, speed, and efficiency.",
-    url: `${websiteURL}`,
+    url: `${websiteURL}/`,
     siteName: "TIFF File Tools",
     images: [
       {
@@ -113,9 +113,10 @@ export const productTitles = {
 export type ProductTitles = (typeof productTitles)[keyof typeof productTitles];
 
 export const productSubTitles = {
-  TIFFSplitter: "Windows 11/10/8/7 | Fully Functional 15 Days Free Trial",
-  TIFFCombiner: "Windows 11/10/8/7 | Fully Functional 15 Days Free Trial",
-  TIFFSplitMerge: "Windows 11/10/8/7 | Fully Functional 15 Days Free Trial",
+  TIFFSplitter: "Secure Windows Desktop Application to split TIFF files",
+  TIFFCombiner: "Secure Windows Desktop Application to combine TIFF files",
+  TIFFSplitMerge:
+    "Secure Windows Desktop Application to split and merge TIFF files",
 } as const;
 export type ProductSubTitles =
   (typeof productSubTitles)[keyof typeof productSubTitles];
@@ -130,11 +131,11 @@ export type ProductWebsite =
 
 export const productDownloadLinks = {
   TIFFSplitter:
-    "https://tiff-split-combine.com/downloads/tiff-splitter-setup.exe",
+    "https://www.tiff-split-combine.com/downloads/tiff-splitter-setup.exe",
   TIFFCombiner:
-    "https://tiff-split-combine.com/downloads/tiff-combiner-setup.exe",
+    "https://www.tiff-split-combine.com/downloads/tiff-combiner-setup.exe",
   TIFFSplitMerge:
-    "https://tiff-split-combine.com/downloads/tiff-split-merge-setup.exe",
+    "https://www.tiff-split-combine.com/downloads/tiff-split-merge-setup.exe",
 } as const;
 export type ProductDownloadLinks =
   (typeof productDownloadLinks)[keyof typeof productDownloadLinks];

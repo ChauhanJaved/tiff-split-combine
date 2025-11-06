@@ -4,7 +4,7 @@ export const dynamic = "force-static";
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: `${websiteURL}`,
+      url: `${websiteURL}/`,
       lastModified: new Date(),
       priority: 1,
     },

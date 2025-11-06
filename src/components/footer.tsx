@@ -19,7 +19,7 @@ export default function Footer(props: PropsFooter) {
             asChild
           >
             <Link
-              href={"https://www.frameworkteam.com"}
+              href={"https://www.frameworkteam.com/"}
               target="_blank"
               rel="noopener noreferrer"
             >
