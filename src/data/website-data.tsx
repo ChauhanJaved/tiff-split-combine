@@ -122,9 +122,9 @@ export type ProductSubTitles =
   (typeof productSubTitles)[keyof typeof productSubTitles];
 
 export const productWebsites = {
-  TIFFSplitter: "https://www.tiff-split-combine.com/tiff-splitter",
-  TIFFCombiner: "https://www.tiff-split-combine.com/tiff-combiner",
-  TIFFSplitMerge: "https://www.tiff-split-combine.com/tiff-split-merge",
+  TIFFSplitter: "https://www.pdf-tiff-tools.com/tiff-splitter-desktop",
+  TIFFCombiner: "https://www.pdf-tiff-tools.com/tiff-combiner",
+  TIFFSplitMerge: "https://www.pdf-tiff-tools.com/tiff-split-merge",
 } as const;
 export type ProductWebsite =
   (typeof productWebsites)[keyof typeof productWebsites];
