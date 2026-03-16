@@ -84,7 +84,7 @@ export default async function Page({ params }: Props) {
 
               <div className="mt-10 flex w-full flex-col justify-center md:flex-row">
                 {/* ----- Box-1 ----- */}
-                {portfolioItem.categories[1] === Categories.WebApp ? (
+                {portfolioItem.categories[1] === Categories.Online ? (
                   <ProductImageWebApp
                     src={portfolioItem.src}
                     width={portfolioItem.width}
@@ -134,35 +134,35 @@ export default async function Page({ params }: Props) {
                     "Lifetime license with one-time purchase | Free upgrades | 15-day money-back guarantee | Secure payments via FastSpring"
                   }
                 />
-
-                <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-                  {portfolioItem.licenseOptions.map((license, index) => (
-                    <div
-                      key={index}
-                      className="flex items-center justify-center"
-                    >
-                      <Button
-                        asChild
-                        variant={"outline"}
-                        className="h-16 w-[275px]"
+                {portfolioItem.licenseOptions && portfolioItem.licenseOptions.length > 0 && (
+                  <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                    {portfolioItem.licenseOptions.map((license, index) => (
+                      <div
+                        key={index}
+                        className="flex items-center justify-center"
                       >
-                        <Link
-                          aria-label={`Buy ${license.licenseType} for ${license.price}`}
-                          className="flex gap-3"
-                          target="_blank"
-                          href={license.paymentLink}
-                          rel="noopener noreferrer"
+                        <Button
+                          asChild
+                          variant={"outline"}
+                          className="h-16 w-[275px]"
                         >
-                          <ShoppingCart />
-                          <div className="flex flex-col items-start">
-                            <span>{license.licenseType}</span>
-                            <span>{license.price}</span>
-                          </div>
-                        </Link>
-                      </Button>
-                    </div>
-                  ))}
-                </div>
+                          <Link
+                            aria-label={`Buy ${license.licenseType} for ${license.price}`}
+                            className="flex gap-3"
+                            target="_blank"
+                            href={license.paymentLink}
+                            rel="noopener noreferrer"
+                          >
+                            <ShoppingCart />
+                            <div className="flex flex-col items-start">
+                              <span>{license.licenseType}</span>
+                              <span>{license.price}</span>
+                            </div>
+                          </Link>
+                        </Button>
+                      </div>
+                    ))}
+                  </div>)}
                 <div className="flex flex-col">
                   <h3 className="mt-10 font-semibold">
                     Secure Payments via FastSpring

@@ -18,7 +18,7 @@ export const TIFFSplitMerge: portfolioItem = {
   height: productImages.TIFFSplitMerge.height,
   categories: [
     Categories.All,
-    Categories.DesktopApp,
+    Categories.Desktop,
     Categories.Splitter,
     Categories.Merger,
   ],

@@ -9,17 +9,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: `${websiteURL}/${ProductIDs.TIFFSplitter}`,
+      url: `${websiteURL}/${ProductIDs.TIFFSplitterWeb}/`,
       lastModified: new Date(),
       priority: 0.8,
     },
     {
-      url: `${websiteURL}/${ProductIDs.TIFFCombiner}`,
+      url: `${websiteURL}/${ProductIDs.TIFFMergerWeb}/`,
       lastModified: new Date(),
       priority: 0.8,
     },
     {
-      url: `${websiteURL}/${ProductIDs.TIFFSplitMerge}`,
+      url: `${websiteURL}/${ProductIDs.TIFFSplitterDesktop}/`,
+      lastModified: new Date(),
+      priority: 0.8,
+    },
+    {
+      url: `${websiteURL}/${ProductIDs.TIFFCombiner}/`,
+      lastModified: new Date(),
+      priority: 0.8,
+    },
+    {
+      url: `${websiteURL}/${ProductIDs.TIFFSplitMerge}/`,
       lastModified: new Date(),
       priority: 0.8,
     },

@@ -9,16 +9,16 @@ import {
   productDownloadLinks,
 } from "@/data/website-data";
 import cloudinaryLoader from "@/lib/cloudinary-loader";
-export const TIFFSplitter: portfolioItem = {
-  id: ProductIDs.TIFFSplitter,
-  title: productTitles.TIFFSplitter,
-  subtitle: productSubTitles.TIFFSplitter,
-  src: productImages.TIFFSplitter.imgName,
-  width: productImages.TIFFSplitter.width,
-  height: productImages.TIFFSplitter.height,
-  categories: [Categories.All, Categories.DesktopApp, Categories.Splitter],
-  pageLink: `/${ProductIDs.TIFFSplitter}`,
-  productWebsite: productWebsites.TIFFSplitter,
+export const TIFFSplitterDesktop: portfolioItem = {
+  id: ProductIDs.TIFFSplitterDesktop,
+  title: productTitles.TIFFSplitterDesktop,
+  subtitle: productSubTitles.TIFFSplitterDesktop,
+  src: productImages.TIFFSplitterDesktop.imgName,
+  width: productImages.TIFFSplitterDesktop.width,
+  height: productImages.TIFFSplitterDesktop.height,
+  categories: [Categories.All, Categories.Desktop, Categories.Splitter],
+  pageLink: `/${ProductIDs.TIFFSplitterDesktop}`,
+  productWebsite: productWebsites.TIFFSplitterDesktop,
   downloadLink: productDownloadLinks.TIFFSplitter,
   features: [
     "Split Locally with Full Offline Security",
@@ -97,71 +97,33 @@ export const TIFFSplitter: portfolioItem = {
     </div>
   ),
   metaData: {
-    title: `Free ${productTitles.TIFFSplitter} for Windows | Fast & Reliable TIFF Splitting Tool`,
+    title: `Free ${productTitles.TIFFSplitterDesktop} for Windows | Fast & Reliable TIFF Splitting Tool`,
     keywords:
       "TIFF Splitter, Split TIFF Files, Batch TIFF Splitting, Windows TIFF Splitter, TIFF File Management",
     description:
       "Effortlessly split multi-page TIFF files with our fast and free Windows software. Enjoy a user-friendly interface, batch processing, and customizable splitting options for precise control.",
     alternates: {
-      canonical: productWebsites.TIFFSplitter,
+      canonical: productWebsites.TIFFSplitterDesktop,
     },
     openGraph: {
-      title: `Free ${productTitles.TIFFSplitter} for Windows | Fast & Reliable TIFF Splitting Tool`,
+      title: `Free ${productTitles.TIFFSplitterDesktop} for Windows | Fast & Reliable TIFF Splitting Tool`,
       description:
         "Effortlessly split multi-page TIFF files with our fast and free Windows software. Enjoy a user-friendly interface, batch processing, and customizable splitting options for precise control.",
-      url: productWebsites.TIFFSplitter,
-      siteName: `${productTitles.TIFFSplitter} for Windows`,
+      url: productWebsites.TIFFSplitterDesktop,
+      siteName: `${productTitles.TIFFSplitterDesktop} for Windows`,
       images: [
         {
           url: cloudinaryLoader({
-            src: productImages.TIFFSplitter.imgName,
-            width: productImages.TIFFSplitter.width,
+            src: productImages.TIFFSplitterDesktop.imgName,
+            width: productImages.TIFFSplitterDesktop.width,
           }),
-          width: productImages.TIFFSplitter.width,
-          height: productImages.TIFFSplitter.height,
-          alt: `Free ${productTitles.TIFFSplitter} for Windows`,
+          width: productImages.TIFFSplitterDesktop.width,
+          height: productImages.TIFFSplitterDesktop.height,
+          alt: `Free ${productTitles.TIFFSplitterDesktop} for Windows`,
         },
       ],
       locale: "en_US",
       type: "article",
     },
   },
-  licenseOptions: [
-    {
-      licenseType: "ONE Computer License",
-      price: "$24.95 USD",
-      paymentLink:
-        "https://frameworkteam.onfastspring.com/tiff-splitter-one-computer-license",
-    },
-    {
-      licenseType: "TWO Computers License",
-      price: "$39.95 USD",
-      paymentLink:
-        "https://frameworkteam.onfastspring.com/tiff-splitter-two-computers-license",
-    },
-    {
-      licenseType: "THREE Computers License",
-      price: "$44.95 USD",
-      paymentLink:
-        "https://frameworkteam.onfastspring.com/tiff-splitter-three-computers-license",
-    },
-    {
-      licenseType: "FIVE Computers License",
-      price: "$64.95 USD",
-      paymentLink:
-        "https://frameworkteam.onfastspring.com/tiff-splitter-five-computers-license",
-    },
-    {
-      licenseType: "TEN Computers License",
-      price: "$109.95 USD",
-      paymentLink:
-        "https://frameworkteam.onfastspring.com/tiff-splitter-ten-computers-license",
-    },
-    {
-      licenseType: "UNLIMITED Computers License",
-      price: "$224.95 USD",
-      paymentLink:
-        "https://frameworkteam.onfastspring.com/tiff-splitter-unlimited-computers-license",
-    },
-  ],
 };

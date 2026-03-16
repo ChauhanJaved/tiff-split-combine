@@ -28,8 +28,8 @@ const Hero = () => {
   const filteredCategoryList = categoryList.filter(
     (category) =>
       category === Categories.All ||
-      category === Categories.WebApp ||
-      category === Categories.DesktopApp,
+      category === Categories.Online ||
+      category === Categories.Desktop,
   );
   return (
     <section id={HeaderNavItems.Home} className="relative flex w-full flex-col">

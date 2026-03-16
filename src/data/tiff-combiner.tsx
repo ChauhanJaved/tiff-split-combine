@@ -16,7 +16,7 @@ export const TIFFCombiner: portfolioItem = {
   src: productImages.TIFFCombiner.imgName,
   width: productImages.TIFFCombiner.width,
   height: productImages.TIFFCombiner.height,
-  categories: [Categories.All, Categories.DesktopApp, Categories.Merger],
+  categories: [Categories.All, Categories.Desktop, Categories.Merger],
   pageLink: `/${ProductIDs.TIFFCombiner}`,
   productWebsite: productWebsites.TIFFCombiner,
   downloadLink: productDownloadLinks.TIFFCombiner,

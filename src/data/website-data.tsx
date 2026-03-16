@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { ReactNode } from "react";
 
+export const siteName: string = "pdf-tiff-tools.com";
 export const headerCompanyName: string = "FrameworkTeam";
 export const companyName: string = "FrameworkTeam Softwares";
 export const email: string = "support@frameworkteam.com";
@@ -64,7 +65,31 @@ export const indexMetadata: Metadata = {
   },
 };
 export const productImages = {
-  TIFFSplitter: {
+  TIFFSplitterWeb: {
+    title: "TIFF Splitter Online",
+    imgName: `/${headerCompanyName.toLowerCase()}/${"tiff-splitter-web-icon".toLowerCase()}`,
+    width: 1024,
+    height: 1024,
+  },
+  TIFFSplitterWebOG: {
+    title: "TIFF Splitter Online",
+    imgName: `/${headerCompanyName.toLowerCase()}/${"tiff-splitter-web-icon-og".toLowerCase()}`,
+    width: 1200,
+    height: 630,
+  },
+  TIFFMergerWeb: {
+    title: "TIFF Merger Online",
+    imgName: `/${headerCompanyName.toLowerCase()}/${"tiff-merger-web-icon".toLowerCase()}`,
+    width: 1024,
+    height: 1024,
+  },
+  TIFFMergerWebOG: {
+    title: "TIFF Merger Online",
+    imgName: `/${headerCompanyName.toLowerCase()}/${"tiff-merger-web-icon-og".toLowerCase()}`,
+    width: 1200,
+    height: 630,
+  },
+  TIFFSplitterDesktop: {
     title: "TIFF Splitter",
     imgName: `/${headerCompanyName.toLowerCase()}/${"tiff-splitter".toLowerCase()}`,
     width: 739,
@@ -85,46 +110,56 @@ export const productImages = {
 };
 export enum Categories {
   All = "All",
-  WebApp = "Web App",
-  DesktopApp = "Desktop App",
+  Online = "Online",
+  Desktop = "Desktop",
   Converter = "Converter",
   Splitter = "Splitter",
   Merger = "Merger",
 }
 export const categoryList: string[] = [
   Categories.All,
-  Categories.WebApp,
-  Categories.DesktopApp,
+  Categories.Online,
+  Categories.Desktop,
   Categories.Converter,
   Categories.Splitter,
   Categories.Merger,
 ];
 
 export enum ProductIDs {
-  TIFFSplitter = "tiff-splitter",
+  TIFFSplitterWeb = "tiff-splitter",
+  TIFFMergerWeb = "tiff-merger",
+  TIFFSplitterDesktop = "tiff-splitter-desktop",
   TIFFCombiner = "tiff-combiner",
   TIFFSplitMerge = "tiff-split-merge",
 }
 export const productTitles = {
-  TIFFSplitter: "TIFF Splitter",
+  TIFFSplitterWeb: "TIFF Splitter",
+  TIFFMergerWeb: "TIFF Merger",
+  TIFFSplitterDesktop: "TIFF Splitter",
   TIFFCombiner: "TIFF Combiner",
   TIFFSplitMerge: "TIFF Split Merge",
 } as const;
 export type ProductTitles = (typeof productTitles)[keyof typeof productTitles];
 
 export const productSubTitles = {
-  TIFFSplitter: "Secure Windows Desktop Application to split TIFF files",
-  TIFFCombiner: "Secure Windows Desktop Application to combine TIFF files",
-  TIFFSplitMerge:
-    "Secure Windows Desktop Application to split and merge TIFF files",
+  TIFFSplitterWeb:
+    "Online tool to split TIFF | Secure & private, your files never leave your device",
+  TIFFMergerWeb:
+    "Online tool to merge TIFF | Secure & private, your files never leave your device",
+  TIFFSplitterDesktop:
+    "Windows 11/10/8/7 | Fully functional 15 days free trial",
+  TIFFCombiner: "Windows 11/10/8/7 | Fully functional 15 days free trial",
+  TIFFSplitMerge: "Windows 11/10/8/7 | Fully functional 15 days free trial",
 } as const;
 export type ProductSubTitles =
   (typeof productSubTitles)[keyof typeof productSubTitles];
 
 export const productWebsites = {
-  TIFFSplitter: "https://www.pdf-tiff-tools.com/tiff-splitter-desktop",
-  TIFFCombiner: "https://www.pdf-tiff-tools.com/tiff-combiner",
-  TIFFSplitMerge: "https://www.pdf-tiff-tools.com/tiff-split-merge",
+  TIFFSplitterWeb: "https://www.pdf-tiff-tools.com/tiff-splitter/",
+  TIFFMergerWeb: "https://www.pdf-tiff-tools.com/tiff-merger/",
+  TIFFSplitterDesktop: "https://www.pdf-tiff-tools.com/tiff-splitter-desktop/",
+  TIFFCombiner: "https://www.pdf-tiff-tools.com/tiff-combiner/",
+  TIFFSplitMerge: "https://www.pdf-tiff-tools.com/tiff-split-merge/",
 } as const;
 export type ProductWebsite =
   (typeof productWebsites)[keyof typeof productWebsites];
@@ -160,5 +195,6 @@ export interface portfolioItem {
   features: string[];
   description?: ReactNode;
   metaData: Metadata;
-  licenseOptions: LicenseOption[];
+  licenseOptions?: LicenseOption[];
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
 }
